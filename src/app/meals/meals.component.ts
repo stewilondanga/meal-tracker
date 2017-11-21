@@ -18,8 +18,6 @@ export class MealsComponent implements OnInit {
     this.selectedMeal = meal;
   }
 
-
-
   constructor() { }
 
   ngOnInit() {
