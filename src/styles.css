@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+h1 {
+  color: #1DBB84;
+  font-family: courier;
+  font-size: 55;
+  font-weight:bold;
+}
+body {
+  margin:auto;
+}
+body, input[text], button {
+  color: #7A110B;
+  font-family: courier;
+}
+
+/* everywhere else */
+*{
+  font-family: courier;
+}
