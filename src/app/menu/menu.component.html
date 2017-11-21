@@ -1,11 +1,11 @@
-<div *ngIf="menu">
+<div *ngIf="meal">
 
   <h2>{{ meal.name | uppercase }} Details</h2>
   <div><span>calorie: </span>{{meal.calorie}}</div>
   <div>
 
     <label>name:
-      <input [(ngModel)]="Meal.name" placeholder="meal"/>
+      <input [(ngModel)]="meal.name" placeholder="meal"/>
     </label>
   </div>
 </div>

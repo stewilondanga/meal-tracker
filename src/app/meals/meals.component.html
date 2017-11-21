@@ -1,12 +1,12 @@
 <p>
-  {{meals}}
+  {{ title }}
 </p>
 
 <h2>My Meals</h2>
 <ul class="mealz">
-  <li *ngFor="let meal of mealz" [class.selected]="meal === selectedMeal" (click)="onSelect(hero)">
+  <li *ngFor="let meal of meals" [class.selected]="meal === selectedMeal" (click)="onSelect(meal)">
     <span class="badge">{{meal.calorie}}</span> {{meal.name}}
   </li>
 </ul>
 
-<app-menu [menu]="selectedMeal"></app-menu>
+<app-menu [meal]="selectedMeal"></app-menu>

@@ -8,17 +8,19 @@ import { MEALS } from '../mock-meal'
   styleUrls: ['./meals.component.css']
 })
 export class MealsComponent implements OnInit {
-  meals = 'Cabbage'
-
+  meals: Meal[];
   selectedMeal: Meal;
+  title: string;
 
-     mealz = MEALS;
+  constructor() {
+    this.meals = MEALS;
+    this.title = "Meal Tracker";
+  }
 
   onSelect(meal: Meal): void {
     this.selectedMeal = meal;
   }
 
-  constructor() { }
 
   ngOnInit() {
   }

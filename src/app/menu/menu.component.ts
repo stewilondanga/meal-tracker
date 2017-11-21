@@ -7,7 +7,7 @@ import { Meal } from '../meal';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  @Input() menu: Meal;
+  @Input() meal: Meal;
 
   constructor() { }
 
