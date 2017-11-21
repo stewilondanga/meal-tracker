@@ -10,13 +10,16 @@ import { MEALS } from '../mock-meal'
 export class MealsComponent implements OnInit {
   meals = 'Cabbage'
 
-  meal: Meal = {
-    calorie: 1,
-    name: 'Cabbage'
-  };
+  selectedMeal: Meal;
 
-  mealz = MEALS;
-  
+    mealz = MEALS;
+
+  onSelect(meal: Meal): void {
+    this.selectedMeal = meal;
+  }
+
+
+
   constructor() { }
 
   ngOnInit() {

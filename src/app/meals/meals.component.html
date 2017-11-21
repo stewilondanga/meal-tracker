@@ -2,19 +2,24 @@
   {{meals}}
 </p>
 
-<h2>{{ meal.name | uppercase }} Details</h2>
-<div><span>calorie: </span>{{meal.calorie}}</div>
-<div><span>name: </span>{{meal.name}}</div>
+<div *ngIf="selectedMeal">
 
-<div>
-  <label>name:
+  <h2>{{ meal.name | uppercase }} Details</h2>
+  <div><span>calorie: </span>{{meal.calorie}}</div>
+  <div><span>name: </span>{{meal.name}}</div>
+
+  <div>
+    <label>name:
     <input [(ngModel)]="meal.name"placeholder="meal">
   </label>
+  </div>
 </div>
 
 <h2>My Meals</h2>
 <ul class="mealz">
-  <li *ngFor="let meal of mealz">
+  <li *ngFor="let meal of mealz"
+  [class.selected]="meal === selectedMeal"
+  (click="onSelect(meal)" )>
     <span class="badge">{{meal.calorie}}</span> {{meal.name}}
   </li>
 </ul>

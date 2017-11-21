@@ -2,3 +2,46 @@
   background-color: #021E03 !important;
   color: white;
 }
+.mealz {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.mealz li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #9FF3A2;
+  margin: .5em;
+  padding: .3em o;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.mealz li.selected:hover {
+  background-color: #DFDE68 !important;
+  color: #E75113;
+}
+.mealz li:hover {
+  color: #13E5E7;
+  background-color: #010707;
+  left: .1em;
+}
+.mealz .text {
+  position: relative;
+  top: -3px;
+}
+.mealz .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #8ADADA;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
