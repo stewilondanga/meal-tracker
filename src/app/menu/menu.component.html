@@ -1,15 +1,11 @@
-<p>
-  menu works!
-</p>
+<div *ngIf="menu">
 
-<app-menu [meal]="selectedMeal"></app-menu>
-
-<div *ngIf="meal">
   <h2>{{ meal.name | uppercase }} Details</h2>
   <div><span>calorie: </span>{{meal.calorie}}</div>
   <div>
+
     <label>name:
-      <input [(ngModel)]="meal.name" placeholder="meal"/>
+      <input [(ngModel)]="Meal.name" placeholder="meal"/>
     </label>
-</div>
+  </div>
 </div>

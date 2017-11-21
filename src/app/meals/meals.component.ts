@@ -12,7 +12,7 @@ export class MealsComponent implements OnInit {
 
   selectedMeal: Meal;
 
-    mealz = MEALS;
+     mealz = MEALS;
 
   onSelect(meal: Meal): void {
     this.selectedMeal = meal;
