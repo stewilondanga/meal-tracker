@@ -1,5 +1,10 @@
 # MealTracker
 
+This is code for a web application where the user will be able to track meals in a facility dealing with meal preparation,
+The user can add meals one at a time with their description and calory details.
+
+# TECHNOLOGIES USED
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
 ## Development server
