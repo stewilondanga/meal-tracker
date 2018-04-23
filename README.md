@@ -1,5 +1,7 @@
 # MealTracker
+By Stewart ilondanga
 
+## Description
 This is code for a web application where the user will be able to track meals in a facility dealing with meal preparation,
 The user can add meals one at a time with their description and calory details.
 
